@@ -1,0 +1,415 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+
+/* ===== Base Theme (Light) ===== */
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #111111;
+  --card-bg: #ffffff;
+  --accent-color: #e63946;
+  --btn-color: #e63946;
+  --btn-hover: #d62828;
+}
+
+/* ===== Dark Theme ===== */
+[data-theme="dark"] {
+  --bg-color: #111111;
+  --text-color: #f1f1f1;
+  --card-bg: #1c1c1c;
+  --accent-color: #f04e30;
+  --btn-color: #f04e30;
+  --btn-hover: #d62828;
+}
+
+
+
+/* ===== Apply Variables ===== */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: background 0.3s;
+}
+
+h1, h2, h3 {
+  color: var(--accent-color);
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* ===== Toggle Button Styling ===== */
+.theme-toggle {
+  position: static;
+  top: 1rem;
+  right: 1rem;
+  background: var(--card-bg);
+  border: none;
+    margin-left: 1rem;
+  font-size: 1.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+
+
+.theme-toggle:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f04e30;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero with Slider */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;         /* full width */
+  max-width: 100% !important; /* override the section rule */
+  margin: 0;           /* no auto-centering */
+  padding: 0;          /* remove padding */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  position: relative;
+  color: #fff;
+  z-index: 2;
+  padding: 0 2rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.slide {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+
+.slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.slider-dots .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dots .dot.active {
+  background: #f04e30;
+  transform: scale(1.2);
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+}
+
+.logo {
+  height: 40px; /* adjust size */
+  width: auto;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+.btn {
+  background: #f04e30;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #c23c24;
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.about {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.contact button {
+  background: #f04e30;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f04e30;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: #f04e30;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f04e30;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons img {
+  width: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  filter: invert(46%) sepia(95%) saturate(7496%) hue-rotate(353deg) brightness(94%) contrast(97%);
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}

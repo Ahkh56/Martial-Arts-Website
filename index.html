@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martial Arts Academy</title>
+   <link rel="icon" href="assets/yinyang.svg" type="image/svg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="logo-container">
+    <img src="assets/academy.png" alt="Martial Arts Academy Logo" class="logo">
+    <h1>Martial Arts Academy</h1>
+  </div>
+
+    <nav id="navbar">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero -->
+ <section class="hero">
+  <div class="slider">
+    <div class="slide active" style="background-image: url('https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/lgpcrz0knsburbdac6b7');"></div>
+    <div class="slide" style="background-image: url('https://plus.unsplash.com/premium_photo-1683120902370-0431903fb8b5?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dGFla3dvbmRvfGVufDB8fDB8fHww');"></div>
+    <div class="slide" style="background-image: url('https://cdn.blitzsport.com/images/wallpapers/Blitz-Judo-Wallpaper-1920x1080.jpg');"></div>
+  </div>
+  <div class="hero-content">
+  <h2>Master the Art of Discipline & Strength</h2>
+  <p>Join our Judo and Taekwondo training programs today!</p>
+  <a href="#contact" class="btn">Get Started</a>
+</div>
+
+<!-- Slider Dots -->
+<div class="slider-dots" id="slider-dots"></div>
+
+</section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      We are dedicated to teaching martial arts with a focus on discipline,
+      respect, and self-confidence. Our expert instructors guide students
+      through Judo and Taekwondo programs for all ages.
+    </p>
+  </section>
+
+  <!-- Programs -->
+<section id="programs">
+  <h2 style="text-align:center;">Our Programs</h2>
+  <div class="programs">
+    <div class="card">
+      <img src="assets/judo.svg" alt="Judo">
+      <div class="card-content">
+        <h3>Judo</h3>
+        <p>Learn the art of throwing, grappling, and control with traditional Judo training.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/taekwondo.svg" alt="Taekwondo">
+      <div class="card-content">
+        <h3>Taekwondo</h3>
+        <p>Master powerful kicks, strikes, and forms in our Taekwondo classes for all skill levels.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/karate.svg" alt="Karate">
+      <div class="card-content">
+        <h3>Karate</h3>
+        <p>Build strength, discipline, and precision through Karate’s striking techniques.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/kungfu.svg" alt="Kung Fu">
+      <div class="card-content">
+        <h3>Kung Fu</h3>
+        <p>Learn fluid movements, animal forms, and self-defense skills in Kung Fu training.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="assets/taichi.svg" alt="Tai Chi">
+      <div class="card-content">
+        <h3>Tai Chi</h3>
+        <p>Discover harmony, balance, and mental clarity through Tai Chi’s flowing movements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer>
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-section">
+      <h3>Martial Arts Academy</h3>
+      <p>Building strength, discipline, and confidence through Judo and Taekwondo training for all ages.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@martialartsacademy.com</p>
+      <p>Phone: +123 456 789</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Martial Arts Academy. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
